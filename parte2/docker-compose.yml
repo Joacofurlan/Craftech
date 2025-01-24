@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+
+  db:
+    container_name: database
+    hostname: database
+    image: postgres:12.0-alpine
+    env_file: ./.env.postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - my-net
+    tty: true # Sino no se corre el runserver
+
+
+  backend:
+    container_name: backend
+    hostname: backend
+    build: ./backend
+    env_file: ./.env.postgres
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    networks:
+      - my-net
+
+  frontend:
+    container_name: frontend
+    hostname: frontend
+    build: ./frontend
+    env_file: ./.env.postgres
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+    networks:
+      - my-net
+
+volumes:
+  postgres_data:
+  static:
+  media:
+
+networks:
+  my-net:
