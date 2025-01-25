@@ -1,0 +1,1 @@
+Se realizo un diagrama de AWS diseñado para alta disponibilidad y escabilidad. Esta divida en dos zonas de disponibilidad y contiene servicio de front-end , back-end y una base de datos relacional y otra no relacional
