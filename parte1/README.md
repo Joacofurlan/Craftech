@@ -1,3 +1,5 @@
+# **DESCRIPCION**
+
 Elegí este diagrama de red porque combina alta disponibilidad, escalabilidad automática y seguridad.
 
 El diagrama representa una arquitectura de AWS diseñada para garantizar alta disponibilidad y escalabilidad. La infraestructura está distribuida en dos zonas de disponibilidad (Availability Zones) y consta de un servicio de front-end, back-end, y dos bases de datos: una relacional y otra no relacional.
