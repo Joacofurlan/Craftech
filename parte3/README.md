@@ -21,6 +21,7 @@ Para probar que el flujo de trabajo CI/CD funciona correctamente en GitHub, real
 Haz un cambio en cualquiera de los archivos del proyecto (por ejemplo, en el archivo index.html).
 
 Añade los cambios:
+
 git add .
 
 git commit -m "Prueba del flujo de trabajo CI/CD"
