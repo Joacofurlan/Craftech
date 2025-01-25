@@ -12,7 +12,7 @@ Asegúrate de tener los siguientes elementos configurados antes de continuar:
 
 3. **DockerHub**: Debes tener una cuenta en [DockerHub] ya que la imagen de Docker será subida a tu cuenta de DockerHub.
 
-##**Configuracion**
+**Configuracion**
 
 Crear la carpeta `.github/workflows/`. Luego mueve el archivo `ci-cd.yml` a la carpeta correspondiente.
 
