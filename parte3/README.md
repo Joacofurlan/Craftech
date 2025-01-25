@@ -28,7 +28,7 @@ git commit -m "Prueba del flujo de trabajo CI/CD"
 
 git push origin main
 
-**Crear un Token en DockerHub y Agregarlo a GitHub:**
+**Crear un Token en DockerHub y agregarlo a GitHub:**
 
 Para permitir que GitHub Actions interactúe con DockerHub y pueda iniciar sesión, crear imágenes y subirlas a tu cuenta de DockerHub, necesitarás crear un token de acceso personal en DockerHub y luego agregarlo como un secreto en tu repositorio de GitHub.
 
