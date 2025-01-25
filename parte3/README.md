@@ -28,4 +28,4 @@ git commit -m "Prueba del flujo de trabajo CI/CD"
 
 git push origin main
 
-## Si solo queres que los cambios afecten solo al index.html descomentar la linea 7 y 8 del archivo ci-cd.yml
+## Si queres que los cambios afecten solo al index.html descomentar la linea 7 y 8 del archivo ci-cd.yml
