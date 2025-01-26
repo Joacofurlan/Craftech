@@ -37,3 +37,35 @@ Si recibes un error indicando que los puertos `3000` o `8000` están en uso, rev
 
  `lsof -i :3000` / `lsof -i :8000`
 
+# **CONFIGURACION EN AWS**
+
+-**Crear Repositorios en ECR**:
+
+Acceder a Amazon ECR y crea dos repositorios, uno para el backend (django-backend) y otro para el frontend (react-frontend).
+
+Crear imágenes Docker y publicarlas en ECR: Asegurar de tener Docker configurado para interactuar con ECR.
+
+-**Iniciar sesión**:
+
+`aws ecr get-login-password --region <REGION> | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com`
+
+-**Construir imagen del back-end**:
+
+`docker build -t django-backend ./backend`
+
+-**Etiquetar la imagen para ECR**:
+
+`docker tag django-backend:latest <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/django-backend:latest`
+
+-**Subir la imagen**:
+
+`docker push <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/django-backend:latest`
+
+-**Repetir el proceso para el front-end**:
+
+`docker build -t react-frontend ./frontend`
+
+`docker tag react-frontend:latest <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/react-frontend:latest`
+
+`docker push <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/react-frontend:latest`
+
