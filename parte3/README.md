@@ -6,13 +6,13 @@ Este proyecto utiliza **GitHub Actions** para automatizar el proceso de construc
 
 Asegúrate de tener los siguientes elementos configurados antes de continuar:
 
-1. **Docker**: Tener Docker instalado en tu computadora.
+1. [Tener Docker instalado en tu computadora.](https://docs.docker.com/get-started/get-docker/)
 
-2. **Docker Compose**: Este proyecto usa Docker Compose para gestionar los contenedores de Docker.
+2. Este proyecto usa [Docker Compose](https://docs.docker.com/compose/) para gestionar los contenedores de Docker.
 
-3. **DockerHub**: Debes tener una cuenta en [DockerHub] ya que la imagen de Docker será subida a tu cuenta de DockerHub.
+3. Debes tener una cuenta en **[DockerHub]** ya que la imagen de Docker será subida a tu cuenta de [DockerHub](https://hub.docker.com/)
 
-**Configuracion**
+# **Configuracion**:
 
 Crear la carpeta `.github/workflows/`. Luego mueve el archivo `ci-cd.yml` a la carpeta correspondiente.
 
