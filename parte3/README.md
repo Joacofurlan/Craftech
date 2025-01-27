@@ -4,13 +4,14 @@ Este proyecto utiliza **GitHub Actions** para automatizar el proceso de construc
 
 ## Requisitos previos
 
-Asegúrate de tener los siguientes elementos configurados antes de continuar:
+Tener los siguientes elementos configurados:
 
-1. [Tener Docker instalado en tu computadora.](https://docs.docker.com/get-started/get-docker/)
+1. [Guia Instalacion Docker](https://docs.docker.com/get-started/get-docker)
 
-2. Este proyecto usa [Docker Compose](https://docs.docker.com/compose/) para gestionar los contenedores de Docker.
+2. [Guia Instalacion Docker Compose](https://docs.docker.com/compose/)
 
 3. Debes tener una cuenta en **[DockerHub]** ya que la imagen de Docker será subida a tu cuenta de [DockerHub](https://hub.docker.com/)
+4. [Guia Instalacion Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 # **Configuracion**:
 
