@@ -15,7 +15,27 @@ Tener los siguientes elementos configurados:
 
 # **Configuracion**:
 
-Crear la carpeta `.github/workflows/`. Luego mueve el archivo `ci-cd.yml` a la carpeta correspondiente.
+Clona el repositorio:
+
+`git clone https://github.com/usuario/nginx.git`
+
+`cd nginx`
+
+Construir la imagen Docker utilizando el archivo `Dockerfile`:
+
+`docker build -t nginx-server .`
+
+Ejecuta el contenedor:
+
+`docker-compose up -d`
+
+Configura GitHub Actions:
+
+Crear la carpeta `.github/workflows/`. Luego mueve el archivo `ci-cd.yml` a la carpeta correspondiente:
+
+`mkdir -p .github/workflows`
+
+`mv ci-cd.yml .github/workflows/`
 
 Para probar que el flujo de trabajo CI/CD funciona correctamente en GitHub, realiza los siguientes pasos:
 
@@ -23,11 +43,11 @@ Haz un cambio en cualquiera de los archivos del proyecto (por ejemplo, en el arc
 
 Añade los cambios:
 
-git add .
+`git add .`
 
-git commit -m "Prueba del flujo de trabajo CI/CD"
+`git commit -m "Prueba del flujo CI/CD"`
 
-git push origin main
+`git push origin main`
 
 **Crear un Token en DockerHub y agregarlo a GitHub:**
 
