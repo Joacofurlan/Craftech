@@ -32,7 +32,6 @@ services:
     container_name: frontend
     hostname: frontend
     build: ./frontend
-    env_file: ./.env.postgres
     ports:
       - 3000:3000
     depends_on:
